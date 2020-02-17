@@ -1,0 +1,68 @@
+body.email-validator{
+	background-image: url("../../images/tracking-script-wm.png");
+	background-color:#f9f9f9;
+	&:before{
+		content: "";
+    	display: block;
+		position: absolute;
+		top: -21rem;
+		left: 50%;
+		height:80%;
+		background-color:$dark-blue;
+		margin-left: -187.5rem;
+		width: 375rem;
+		transform: rotate(11deg);
+		transform-origin: 50% 0;
+	}
+	.error-wrapper{
+		margin:10px 0;
+		.error{
+			background-color:#FFBABA;
+			position:relative;
+			padding:10px 10px 10px 50px;
+			margin-bottom:5px;
+			border: 1px solid darken(#FFBABA, 20%);
+			div{
+				position: absolute;
+				left: 10px;
+				top:15px;
+				font-size:30px;
+				color: darken(#FFBABA, 20%);
+			}
+		}
+	}
+	.notice-wrapper{
+		margin:10px 0;
+		.notice{
+			background-color:#FEEFB3;
+			position:relative;
+			padding:10px 10px 10px 50px;
+			margin-bottom:5px;
+			border: 1px solid darken(#FEEFB3, 20%);
+			div{
+				position: absolute;
+				left: 10px;
+				top:15px;
+				font-size:30px;
+				color: darken(#FEEFB3, 20%);
+			}
+		}
+	}
+	.information-wrapper{
+		margin:10px 0;
+		.information{
+			background-color:#bcbceb;
+			position:relative;
+			padding:10px 10px 10px 50px;
+			margin-bottom:5px;
+			border: 1px solid darken(#bcbceb, 20%);
+			div{
+				position: absolute;
+				left: 10px;
+				top:15px;
+				font-size:30px;
+				color: darken(#bcbceb, 20%);
+			}
+		}
+	}
+}

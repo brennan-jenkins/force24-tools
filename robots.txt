@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: 
+Disallow: /cgi-bin/
+Sitemap: https://frontendstaging.force24.co.uk/tools/sitemap.xml

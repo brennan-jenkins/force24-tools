@@ -1,0 +1,142 @@
+body.cheat-sheet{
+	background-image: url("../../images/carousel-builder-wm.png");
+	background-color:#f9f9f9;
+	&:before{
+		content: "";
+    	display: block;
+		position: absolute;
+		top: -21rem;
+		left: 50%;
+		height:80%;
+		background-color:$dark-blue;
+		margin-left: -187.5rem;
+		width: 375rem;
+		transform: rotate(11deg);
+		transform-origin: 50% 0;
+	}
+    .modal-backdrop.show{
+        display: none !important;
+    }
+    .contentRow, .modal-content{
+        display: none;
+    }
+    .close{
+        float: right;
+        position: absolute;
+        right: 0;
+        top: 0;
+        background: transparent;
+        border: 0;
+    }
+    .menus{
+        display: block;
+        color: $dark-blue !important;
+        font-weight: 300;
+        margin: 5px 0 0 0;
+        text-decoration: none;
+    }
+    .element-highlight{
+        color: crimson;
+        background-color: #f1f1f1;
+        padding: 0 4px;
+    }
+    .codeModal{
+        position: absolute !important;
+        bottom: 0 !important;
+        top: auto !important;
+        padding: 10px 10px 0 10px;
+        width: 100%;
+        outline: none;
+        .modal-title{
+            color: #ffffff;
+            font-size: 24px;
+            text-transform: inherit;
+        }
+        .preview-code{
+            margin: 0;
+        }
+    }
+    .modal-content{
+        background: #00A7C0;
+        border-radius: 0;
+        padding: 20px;
+    }
+    .modal-dialog{
+        width: 100%;
+        max-width: 100%;
+        margin: 0;
+        border-radius: 0;
+        border: 0;
+    }
+    .modal-style{
+        background: #ffffff;
+        margin: 20px 0 0 0;
+        border-radius: 3px;
+        padding: 15px;
+        color: #000000;
+        height: 300px;
+        overflow: scroll;
+        h1,h2,h3,h4,h5,h6{
+            font-family: Arial;
+        }
+        h1{
+            font-size: 36px;
+            color: #000000;
+            font-weight: 400;
+            margin: 0 0 10px 0;
+            letter-spacing: normal;
+        }
+        h2{
+            color: #000000;
+            font-size: 30px;
+            font-weight: 400;
+            letter-spacing: normal;
+            margin: 0 0 10px 0;
+        }
+        h3{
+            color: #000000;
+            font-size: 24px;
+            font-weight: 400;
+            text-transform: capitalize;
+            letter-spacing: normal;
+            margin: 0 0 10px 0;
+        }
+        h4{
+            color: #000000;
+            font-size: 20px;
+            font-weight: 400;
+            margin: 0 0 10px 0;
+            letter-spacing: normal;
+        }
+        h5{
+            color: #000000;
+            font-size: 18px;
+            font-weight: 400;
+            margin: 0 0 10px 0;
+            letter-spacing: normal;
+            text-transform: capitalize;
+        }
+        h6{
+            color: #000000;
+            font-size: 16px;
+            font-weight: 400;
+            text-align: left;
+            letter-spacing: normal;
+            margin: 0;
+        }
+    }
+    .close{
+        font-size: 26px;
+        margin: 1rem 1rem -1rem auto;
+    }
+
+    .modal-headings{
+        color: #ffffff;
+        display: block;
+        margin: 10px 0 0 0;
+        text-decoration: none;
+        &:hover{
+            color: #f9f9f9;
+        }
+    }
+}

@@ -1,0 +1,115 @@
+/*------------------------------------*\
+    $FORMS
+\*------------------------------------*/
+
+form {
+    margin: 0;
+}
+
+.field-group {
+    padding: 20px;
+    background: $grey-light;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    position: relative;
+    height: auto;
+    // overflow: auto
+}
+
+::-webkit-input-placeholder {
+}
+
+::-moz-placeholder {
+}
+
+:-ms-input-placeholder {
+}
+
+.validation {
+   display: none;
+}
+
+.has-error .validation {
+   clear: both;
+   display: block;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+.jscolor, .desc_input, select, .device-viewer textarea {
+    float: left;
+    height: auto;
+    padding: 15px;
+    height: 50px;
+    width:100%!important;
+    border-radius:0;
+    color: #555;
+    background-color: #e1e1e1;
+    background-image: none;
+    border: 1px solid #000000 !important;
+    margin-right: 2%;
+    font-size: 12px;
+    outline:0;
+}
+
+.desc_input{
+    height:100px;
+    resize:none;
+}
+
+.form-item {
+    position: relative;
+}
+
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+ 
+
+.styled-radio{
+    width:20%;
+    display:inline-block;
+}
+
+.styled-checkbox, .styled-radio{
+    height:30px;
+    label{
+        cursor: pointer;
+        text-transform:uppercase;
+        color:$light-blue;
+        text-indent:30px;
+        font-size:12px;
+        line-height:25px;
+        letter-spacing:1px;
+        position: absolute;
+        width: 25px;
+        height: 25px;
+        background: #ffffff;
+        border:1px solid #132c46;
+        border-radius: 50%;
+        &:after {
+            border-radius: 50%;
+            opacity: 0;
+            content: '';
+            position: absolute;
+            width: 13px;
+            height: 13px;
+            background: #33b6cf;
+            top: 5px;
+            left: 5px;
+        }
+    }
+}
+.styled-checkbox input[type=checkbox]:checked + label:after, .styled-radio input[type=radio]:checked + label:after, .styled-checkbox input[type=radio]:checked + label:after {
+    opacity: 1;
+}
+
+input[type=checkbox],input[type=radio] {
+    visibility: hidden;	
+    position:absolute;
+}
+

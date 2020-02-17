@@ -1,0 +1,44 @@
+body.html-characters{
+	background-image: url("../../images/tracking-script-wm.png");
+	background-color:#f9f9f9;
+	&:before{
+		content: "";
+    	display: block;
+		position: absolute;
+		top: -21rem;
+		left: 50%;
+		height:80%;
+		background-color:$dark-blue;
+		margin-left: -187.5rem;
+		width: 375rem;
+		transform: rotate(11deg);
+		transform-origin: 50% 0;
+	}
+	table{
+		width:100%;
+		margin-top:30px;
+		td,th{
+			text-align:left;
+			padding:5px 20px;
+		}
+		td{
+			width:50%;
+			cursor:pointer;
+			&:nth-child(odd){
+				background-color:#d7f0f5;
+				&:hover{
+					background-color:darken(#d7f0f5, 10%);
+				}
+			}
+			&:nth-child(even){
+				background-color:#ffffff;
+				&:hover{
+					background-color:darken(#ffffff, 10%);
+				}
+			}
+		}
+		th{
+			background-color:#00a4c3;
+		}
+	}
+}

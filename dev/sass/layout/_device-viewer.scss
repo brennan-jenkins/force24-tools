@@ -1,0 +1,265 @@
+body.device-viewer{
+	background-image: url("../../images/box-shadow-wm.png");
+	background-color:#f9f9f9;
+	&:before{
+		content: "";
+    	display: block;
+		position: absolute;
+		top: -21rem;
+		left: 50%;
+		height:80%;
+		background-color:$dark-blue;
+		margin-left: -187.5rem;
+		width: 375rem;
+		transform: rotate(11deg);
+		transform-origin: 50% 0;
+	}
+	.page-container{
+		min-height:1300px;
+	}
+	.phone-container{
+		position:absolute;
+		border: 40px solid #ddd;
+		border-width: 55px 7px;
+		border-radius: 40px;
+		overflow: hidden;
+		left:50%;
+		transform:translateX(-50%);
+		transition: all 0.5s ease;
+		box-shadow: 0px 3px 0 #BBB, 0px 4px 0 #BBB, 0px 5px 0 #BBB, 0px 7px 0 #BBB;
+		&.iphone-xr, &.iphone-xs-max{
+			border: 40px solid #000;
+			border-width: 20px;
+			box-shadow: 0px 3px 0 #333, 0px 4px 0 #333, 0px 5px 0 #333, 0px 7px 0 #333;
+			.phone-notch{
+				background-color:#000;
+				position:absolute;
+				width:60%;
+				height:30px;
+				border-radius:0 0 20px 20px;
+				left:50%;
+				transform:translateX(-50%);
+			}
+		}
+		&.iphone-xs, &.iphone-x{
+			border: 40px solid #000;
+			border-width: 16px;
+			box-shadow: 0px 3px 0 #333, 0px 4px 0 #333, 0px 5px 0 #333, 0px 7px 0 #333;
+			.phone-notch{
+				background-color:#000;
+				position:absolute;
+				width:60%;
+				height:20px;
+				border-radius:0 0 15px 15px;
+				left:50%;
+				transform:translateX(-50%);
+			}
+		}
+		&.iphone-8-plus, &.iphone-8, &.iphone-7-plus, &.iphone-7, &.iphone-6-plus{
+			border: 40px solid #000;
+			border-width: 80px 20px;
+			box-shadow:  0 5px 0 #C0C0C0, 5px 0 0 #C0C0C0, -5px 0 0 #C0C0C0, 0 -5px 0 #C0C0C0;
+			.phone-notch{
+				display:none;
+			}
+		}
+		&.iphone-6{
+			border: 40px solid #F1F2F6;
+			border-width: 80px 15px;
+			box-shadow: 0 5px 0 #EABFB9, 5px 0 0 #EABFB9, -5px 0 0 #EABFB9, 0 -5px 0 #EABFB9;
+			.phone-notch{
+				display:none;
+			}
+		}
+		&.iphone-5, &.iphone-5s{
+			border: 40px solid #F1F2F6;
+			border-width: 80px 18px;
+			border-radius: 30px;
+			box-shadow:  0 5px 0 #C0C0C0, 5px 0 0 #C0C0C0, -5px 0 0 #C0C0C0, 0 -5px 0 #C0C0C0;
+			.phone-notch{
+				display:none;
+			}
+		}
+		&.iphone-5c{
+			border: 40px solid #000;
+			border-width: 60px 18px;
+			border-radius: 30px;
+			box-shadow:  0 5px 0 #55C5EB, 5px 0 0 #55C5EB, -5px 0 0 #55C5EB, 0 -5px 0 #55C5EB;
+			.phone-notch{
+				display:none;
+			}
+		}
+		&.iphone-4{
+			border: 40px solid #000;
+			border-width: 100px 18px;
+			border-radius: 30px;
+			box-shadow:  0 5px 0 #C0C0C0, 5px 0 0 #C0C0C0, -5px 0 0 #C0C0C0, 0 -5px 0 #C0C0C0;
+			.phone-notch{
+				display:none;
+			}
+		}
+		&.iphone-4s{
+			border: 40px solid #F1F2F6;
+			border-width: 100px 18px;
+			border-radius: 30px;
+			box-shadow:  0 5px 0 #C0C0C0, 5px 0 0 #C0C0C0, -5px 0 0 #C0C0C0, 0 -5px 0 #C0C0C0;
+			.phone-notch{
+				display:none;
+			}
+		}
+		&.iphone-3g, &.iphone-3gs, &.iphone{
+			border: 40px solid #000;
+			border-width: 100px 18px;
+			border-radius: 50px;
+			box-shadow:  0 5px 0 #C0C0C0, 5px 0 0 #C0C0C0, -5px 0 0 #C0C0C0, 0 -5px 0 #C0C0C0;
+			.phone-notch{
+				display:none;
+			}
+		}
+		&.samsung-s10-plus{
+			border: 40px solid #000;
+			border-width: 15px 3px;
+			box-shadow: none;
+			.phone-notch{
+				background-color:#000;
+				position:absolute;
+				width:20%;
+				height:30px;
+				border-radius:20px 20px;
+				top:20px;
+				right:20px;
+			}
+		}
+		&.samsung-s10{
+			border: 40px solid #000;
+			border-width: 15px 3px;
+			box-shadow: none;
+			.phone-notch{
+				background-color:#000;
+				position:absolute;
+				width:30px;
+				height:30px;
+				border-radius:20px 20px;
+				top:20px;
+				right:20px;
+			}
+		}
+		&.samsung-s10e{
+			border: 40px solid #000;
+			border-width: 15px 10px;
+			box-shadow: none;
+			.phone-notch{
+				background-color:#000;
+				position:absolute;
+				width:30px;
+				height:30px;
+				border-radius:20px 20px;
+				top:20px;
+				right:20px;
+			}
+		}
+		&.samsung-s9-plus, &.samsung-s9, &.samsung-s8-plus, &.samsung-s8{
+			border: 40px solid #000;
+			border-width: 22px 6px;
+			box-shadow: none;
+			.phone-notch{
+				display:none;
+			}
+		}
+		&.samsung-s7-edge{
+			border: 40px solid #BEA994;
+			border-width: 50px 2px;
+			box-shadow: none;
+			.phone-notch{
+				display:none;
+			}
+		}
+		&.samsung-s7{
+			border: 40px solid #BEA994;
+			border-width: 50px 8px;
+			box-shadow: none;
+			.phone-notch{
+				display:none;
+			}
+		}
+		&.samsung-s6-edge{
+			border: 40px solid #F1F2F6;
+			border-width: 50px 2px;
+			box-shadow:  0 2px 0 #C0C0C0, 2px 0 0 #C0C0C0, -2px 0 0 #C0C0C0, 0 -2px 0 #C0C0C0;
+			.phone-notch{
+				display:none;
+			}
+		}
+		&.samsung-s6{
+			border: 40px solid #F1F2F6;
+			border-width: 50px 8px;
+			box-shadow:  0 5px 0 #C0C0C0, 5px 0 0 #C0C0C0, -5px 0 0 #C0C0C0, 0 -5px 0 #C0C0C0;
+			.phone-notch{
+				display:none;
+			}
+		}
+		&.nexus-5{
+			border: 40px solid #000;
+			border-width: 60px 8px;
+			box-shadow: none;
+			border-radius: 40% / 5%;
+			.phone-notch{
+				display:none;
+			}
+		}
+		&.nexus-6{
+			border: 40px solid #000;
+			border-width: 50px 8px;
+			box-shadow: none;
+			border-radius: 12% / 5%;
+			.phone-notch{
+				display:none;
+			}
+		}
+		&.huawei-p20-lite{
+			border: 40px solid #000;
+			border-width: 14px 8px;
+			box-shadow:  0 3px 0 #2E789E, 3px 0 0 #2E789E, -3px 0 0 #2E789E, 0 -3px 0 #2E789E;
+			.phone-notch{
+				background-color:#000;
+				position:absolute;
+				width:25%;
+				height:20px;
+				border-radius:0 0 15px 15px;
+				left:50%;
+				transform:translateX(-50%);
+			}
+		}
+		&.huawei-p20-pro{
+			border: 40px solid #000;
+			border-width: 14px 8px;
+			box-shadow:  0 3px 0 #2E789E, 3px 0 0 #2E789E, -3px 0 0 #2E789E, 0 -3px 0 #2E789E;
+			.phone-notch{
+				background-color:#000;
+				position:absolute;
+				width:25%;
+				height:20px;
+				border-radius:0 0 15px 15px;
+				left:50%;
+				transform:translateX(-50%);
+			}
+		}
+		&.huawei-p20{
+			border: 40px solid #000;
+			border-width: 14px 8px 40px;
+			box-shadow:  0 3px 0 #222, 3px 0 0 #222, -3px 0 0 #222, 0 -3px 0 #222;
+			.phone-notch{
+				background-color:#000;
+				position:absolute;
+				width:20%;
+				height:20px;
+				border-radius:0 0 15px 15px;
+				left:50%;
+				transform:translateX(-50%);
+			}
+		}
+	}
+	iframe{
+		border:0;
+	}
+}

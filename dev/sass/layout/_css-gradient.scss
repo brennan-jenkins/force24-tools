@@ -1,0 +1,44 @@
+body.css-gradient{
+	background-image: url("../../images/text-cleaner-wm.png");
+	background-color:#f9f9f9;
+	i{
+		color:$light-blue;
+		font-size:30px;
+	}
+	&:before{
+		content: "";
+    	display: block;
+		position: absolute;
+		top: -21rem;
+		left: 50%;
+		height:80%;
+		background-color:$dark-blue;
+		margin-left: -187.5rem;
+		width: 375rem;
+		transform: rotate(11deg);
+		transform-origin: 50% 0;
+	}
+}
+
+.css-gradient-preview{
+	background-image: linear-gradient(to bottom, #132c46, #00a4c3);
+	max-width:70%;
+	position:relative;
+	top:50%;
+	transform:translateY(-50%);
+	max-height:70%;
+	margin:0 auto;
+	padding:50px;
+	z-index:1;
+	p{
+		text-align:center;
+		color:#ffffff;
+		font-weight:bold;
+		font-size:20px;
+		position:absolute;
+		top:50%;
+		left:50%;
+		transform:translate(-50%, -50%);
+		cursor:pointer;
+	}
+}

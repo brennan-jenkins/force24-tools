@@ -1,0 +1,18 @@
+body.countdown-timer{
+	background-image: url("../../images/carousel-builder-wm.png");
+	
+	background-color:#f9f9f9;
+	&:before{
+		content: "";
+    	display: block;
+		position: absolute;
+		top: -21rem;
+		left: 50%;
+		height:80%;
+		background-color:$dark-blue;
+		margin-left: -187.5rem;
+		width: 375rem;
+		transform: rotate(11deg);
+		transform-origin: 50% 0;
+	}
+}

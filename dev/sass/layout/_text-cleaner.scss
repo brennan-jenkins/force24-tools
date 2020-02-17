@@ -1,0 +1,205 @@
+body.text-cleaner{
+	background-image: url("../../images/text-cleaner-wm.png");
+	background-color:#f9f9f9;
+	&:before{
+		content: "";
+    	display: block;
+		position: absolute;
+		top: -21rem;
+		left: 50%;
+		height:80%;
+		background-color:$dark-blue;
+		margin-left: -187.5rem;
+		width: 375rem;
+		transform: rotate(11deg);
+		transform-origin: 50% 0;
+	}
+	
+	.styled-checkbox{
+		height:auto;
+		display:inline-block; 
+		margin:0 0.5% 0 0;
+		width:14%;
+		&:nth-child(1){
+			width:13%;
+			margin-right:0;
+			label{
+				border-radius:6px 0 0 6px;
+				border-right:0;
+			}
+		}
+		&:nth-child(2){
+			width:13%;
+			margin-right:0;
+			label{
+				border-radius:0;
+				border-right:0;
+			}
+		}
+		&:nth-child(3){
+			width:14%;
+			label{
+				border-radius:0px 6px 6px 0;
+			}
+		}
+		&:nth-child(4){
+			width:14%;
+			margin-right:0;
+			label{
+				border-radius:6px 0 0 6px;
+				border-right:0;
+			}
+		}
+		&:nth-child(5){
+			width:14%;
+			label{
+				border-radius:0px 6px 6px 0;
+			}
+		}
+		&:nth-child(7){
+			width:12%;
+			label{
+				border-radius:6px 0 0 6px;
+				border-right:0;
+			}
+		}
+		&:nth-child(8){
+			width:12%;
+			label{
+				border-radius:0;
+				border-right:0;
+			}
+		}
+		&:nth-child(9){
+			width:12%;
+			label{
+				border-radius:0 6px 6px 0;
+			}
+		}
+		&:nth-child(n+6){
+			margin-right:0;
+		}
+		label{
+			cursor: pointer;
+			text-transform: Capitalize;
+			color: $light-blue;
+			text-indent: 0px;
+			font-size: 12px;
+			line-height: 32px;
+			letter-spacing: 1px;
+			font-weight:300;
+			position: relative;
+			text-align:center;
+			width: 100%;
+			height: 32px;
+			background: #ffffff;
+			border: 1px solid $light-blue;
+			border-radius: 6px;
+			@media screen and (max-width:1200px){
+				height: 50px;
+				line-height:25px;
+			}
+			&:after {
+				display:none;
+			}
+		}
+	}
+	.styled-checkbox input[type=checkbox]:checked + label, .styled-checkbox input[type=radio]:checked + label, label:hover, label:hover {
+		background: $light-blue;
+		color:#ffffff;
+	}
+	textarea{
+		margin:0;
+		width:100%; 
+		outline:0; 
+		border: 1px solid #ccc; 
+		resize:none; 
+		box-sizing: border-box; 
+		font-size:20px; 
+		padding:20px 50px 20px 30px;
+		overflow:hidden;
+		&#textinput{
+			border-right:0; 
+			border-radius:6px 0 0 6px;
+		}
+		&#textoutput{
+			border-radius:0 6px 6px 0;
+		}
+	}
+	.text-options{
+		margin-top:30px;
+	}
+	label{
+		&[for=lines]:before{
+			content: "Clear new lines";
+			position: absolute;
+			left: 0px;
+			width: 100%;
+		}	
+		&[for=brTag]:before{
+			content: "New lines to <br>";
+			position: absolute;
+			left: 0;
+			width: 100%;
+		}	
+		&[for=sentence]:before{
+			content: "Sentence case";
+			position: absolute;
+			left: 0;
+			width: 100%;
+		}	
+		&[for=tab]:before{
+			content: "Clear tab spaces";
+			position: absolute;
+			left: 0;
+			width: 100%;
+		}		
+		&[for=upper]:before{
+			content: "Uppercase";
+			position: absolute;
+			left: 0;
+			width: 100%;
+		}			
+		&[for=lower]:before{
+			content: "Lowercase";
+			position: absolute;
+			left: 0;
+			width: 100%;
+		}		
+		&[for=spaces]:before{
+			content: "Clear extra spaces";
+			position: absolute;
+			left: 0;
+			width: 100%;
+		}			
+		&[for=htmlChars]:before{
+			content: "Character to HTML";
+			position: absolute;
+			left: 0;
+			width: 100%;
+		}		
+	}
+	.button{
+		background-color:$light-blue;
+		display:inline-block;
+		padding:18px 60px;
+		border-radius:6px;
+		text-transform: uppercase;
+		text-align:center;
+		color:#ffffff;
+		font-weight:400;
+		margin-top:30px;
+		border:0;
+		font-size:12px;
+		text-decoration:none;
+	}
+	.display-word-count{
+		position:absolute;
+		right:15px;
+		bottom:20px;
+		color:#aaa;
+		font-size:12px;
+	}
+	
+	
+}

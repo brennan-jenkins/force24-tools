@@ -1,0 +1,40 @@
+body.tracking-script{
+	background-image: url("../../images/tracking-script-wm.png");
+	background-color:#f9f9f9;
+	&:before{
+		content: "";
+    	display: block;
+		position: absolute;
+		top: -21rem;
+		left: 50%;
+		height:80%;
+		background-color:$dark-blue;
+		margin-left: -187.5rem;
+		width: 375rem;
+		transform: rotate(11deg);
+		transform-origin: 50% 0;
+	}
+	.page-container{
+		position:relative;
+		padding-top:120px;
+	}
+	
+	label{
+		display:inline-block!important;
+	}
+
+	.mappingSettings{
+		display:none;
+	}
+
+	.nameToMap{
+		display:none;
+		margin-top:30px;
+	}
+
+	input[type=text]{
+		background-color:#e1e1e1;
+		font-size:12px;
+	}	
+
+}

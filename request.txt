@@ -1,0 +1,26 @@
+*   Trying 84.18.197.167...
+* TCP_NODELAY set
+* Connected to alpha-api.data-crypt.com (84.18.197.167) port 443 (#0)
+* ALPN, offering http/1.1
+* SSL connection using TLSv1.2 / ECDHE-RSA-AES256-GCM-SHA384
+* ALPN, server accepted to use http/1.1
+* Server certificate:
+*  subject: OU=Domain Control Validated; OU=PositiveSSL Wildcard; CN=*.data-crypt.com
+*  start date: Oct 31 00:00:00 2018 GMT
+*  expire date: Oct 30 23:59:59 2020 GMT
+*  issuer: C=GB; ST=Greater Manchester; L=Salford; O=COMODO CA Limited; CN=COMODO RSA Domain Validation Secure Server CA
+*  SSL certificate verify result: unable to get local issuer certificate (20), continuing anyway.
+> GET /api/contact/98716526 HTTP/1.1
+Host: alpha-api.data-crypt.com
+User-Agent: force24-php/1.0.0
+Accept: */*
+Content-Type: application/x-www-form-urlencoded
+Authorization: Bearer -lK8vg03Tt-qN9vDdMetAIGrHGhOzXTpHIQ9o6ZK6_bvRxwknxPgEED8RmTzeggoTA-DM8MSZarexqImgB49Be6ZvkHI8JEU5-qRhwtZXa112lASI5KmOvClX-6xw-TmpyKSolQ4crBmy8M4zqvHxp2bFHYhnpsvclzCRvp8Dabk2y5n7wB9BMRpQrWl7jwCvBjrNPrLRO4kgLcq2L1kywPUCAImjXEvr8CGtNsDDm3hGKqErwgqk_GBlMaegG197NRSH6XSkpGzbM961YrCskJJhVeBlW3RzzfowOvysYR5II66Vq6fF2DiEwBNwmsU3nO81XdzYe5cPYNQTTMuNsnsonS5FNWXSSBtCXCJmQgNQxVVN9Dn_65DC0DbvGJ5Ru5u_ULhXflgofN724LrJ0b0RlQyHJqf7M5-07j0Xqgx7ACV2zPOae5ZukdS-ODvWPEUhT5zrhsqpREdyUuraRg_4RJZz6nHz8B6Qt2SgN7EXfw6J-3kCvTqB9bjm04M869MjYG_wZP7B6KFV3fHJTezvX1k33GfJkL6Fra7JK4
+
+< HTTP/1.1 200 OK
+< Content-Type: application/json; charset=utf-8
+< Server: Microsoft-IIS/10.0
+< Date: Fri, 05 Apr 2019 10:05:47 GMT
+< Content-Length: 1468
+< 
+* Connection #0 to host alpha-api.data-crypt.com left intact
